@@ -440,6 +440,9 @@ address {
 }
 
 /* Footer */
+.address-footer {
+  margin-right: 70px;
+}
 .page-footer {
   background-color: var(--footer-color);
   padding-top: 60px;
@@ -460,9 +463,6 @@ address {
 
   display: inline-block;
   margin-bottom: 28px;
-}
-.adds-list {
-  margin-right: 70px;
 }
 
 .adds-item + .adds-item {
@@ -505,6 +505,9 @@ address {
 }
 
 /* Footer Social */
+.social-footer-container {
+  margin-right: 93px;
+}
 
 .footer-title {
   font-size: 14px;
@@ -543,6 +546,32 @@ address {
   background-color: var(--acent-text-color);
 }
 
+/* ПІДПИШІТЬСЯ НА РОЗСИЛКУ */
+
+.subscription-form {
+  display: flex;
+}
+
+.subscription-input {
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  color: var(--link-footer-color);
+  background-color: var(--footer-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscription-icon-send {
+  margin-left: 10px;
+
+  fill: var(--footer-icon-color);
+}
+
 /* Button! */
 
 .button {
@@ -577,6 +606,27 @@ address {
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--acent-button-color);
+}
+
+.button.subscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  color: var(--withe-text-color);
+
+  background: var(--acent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  min-width: 200px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 /* Button Project.html */
