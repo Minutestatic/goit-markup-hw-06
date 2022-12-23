@@ -921,8 +921,8 @@ address {
 
 .checkbox-input:checked + .checkbox-icon {
   fill: var(--withe-text-color);
-  background-color: #2196f3;
-  border-color: #2196f3;
+  background-color: var(--acent-text-color);
+  border-color: var(--acent-text-color);
 }
 
 .checkbox-label {
@@ -932,6 +932,7 @@ address {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  cursor: pointer;
 }
 
 .checkbox-label-link {
