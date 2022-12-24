@@ -623,6 +623,7 @@ address {
   min-width: 200px;
   height: 50px;
 
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
@@ -759,28 +760,25 @@ address {
   transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
 }
 
-.modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
 .modal-container {
-  overflow: auto;
-  height: 100%;
-  max-height: 581px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  transition: transform 250ms ease-in-out;
+
   width: 100%;
+  /* height: 100%; */
   max-width: 528px;
-  position: relative;
+  /* max-height: 581px; */
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px 41px;
 
-  transition: transform 250ms ease-in-out;
+  /* padding: 40px; */
 }
 
 .backdrop.is-hidden .modal {
@@ -820,6 +818,13 @@ address {
   fill: var(--acent-text-color);
 }
 
+.modal-form {
+  margin-top: 12px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+
 .modal-form-title {
   font-size: 20px;
   line-height: 23px;
@@ -828,18 +833,23 @@ address {
 
   color: var(--title-text-color);
 
-  margin-bottom: 12px;
+  margin-top: 40px;
+}
+
+.modal-form-iteam + .modal-form-iteam {
+  margin-top: 10px;
+}
+.modal-form-iteam:last-child {
+  margin-top: 20px;
 }
 
 .form-field-lable {
   display: inline-block;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.166px;
   letter-spacing: 0.01em;
 
   color: var(--primary-text-color);
-
-  margin-bottom: 4px;
 }
 
 .form-field-input {
@@ -863,7 +873,7 @@ address {
 
 .form-field {
   position: relative;
-  margin-bottom: 10px;
+  margin-top: 4px;
 }
 
 .form-field-icon {
@@ -877,13 +887,13 @@ address {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
   cursor: pointer;
   resize: none;
+  margin-top: 4px;
 }
 
 .form-field-textarea:focus {
@@ -898,9 +908,6 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field-checkbox {
-  margin-bottom: 30px;
-}
 .checkbox {
   display: flex;
   align-items: center;
@@ -959,6 +966,7 @@ address {
 
   transition-property: background-color;
   transition-duration: 250ms;
+  margin-top: 30px;
 }
 
 .modal-form-button:hover,
