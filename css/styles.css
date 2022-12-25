@@ -914,7 +914,6 @@ address {
 .checkbox {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .checkbox-input {
@@ -937,7 +936,7 @@ address {
 
 .checkbox-label {
   position: relative;
-  padding-left: 25px;
+  padding-left: 34px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
